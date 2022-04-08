@@ -1,6 +1,6 @@
 # github.com/davecgh/go-spew v1.1.0
 github.com/davecgh/go-spew/spew
-# github.com/joho/godotenv v1.3.0
+# github.com/joho/godotenv v1.4.0
 ## explicit
 github.com/joho/godotenv
 # github.com/pmezard/go-difflib v1.0.0
