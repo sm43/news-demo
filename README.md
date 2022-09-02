@@ -30,3 +30,19 @@ $ git clone https://github.com/sm43/news-demo
 - Rename the `.env.example` file to `.env` and enter your News API Key.
 - `cd` into it and run the following command: `go build && ./news-demo` to start the server on port 3000.
 - Visit http://localhost:3000 in your browser.
+
+## Deploying on Kubernetes Cluster
+
+There is GitHub workflow set up which build an image and push to ghcr whenever there is code changes.
+
+To deploy on a kubernetes cluster, you can just use the following command
+```yaml
+  kubectl apply -f k8s/
+```
+
+you can now expose the service `news-demo` created in `news-demo` namespace using an ingress and use the application.
+
+If you are on OpenShift, you can create an route using the following command
+```yaml
+  kubectl apply -f k8s/openshift/
+```

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: news-demo
-          image: quay.io/sm43/news-demo:latest
+          image: ghcr.io/sm43/news-demo:main
           ports:
             - containerPort: 3000
           env:
