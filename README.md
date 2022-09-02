@@ -35,7 +35,12 @@ $ git clone https://github.com/sm43/news-demo
 
 There is GitHub workflow set up which build an image and push to ghcr whenever there is code changes.
 
+
 To deploy on a kubernetes cluster, you can just use the following command
+
+Sign up for a [News API account](https://newsapi.org/register) and get your
+free API key and update the confgimap in k8s dir and then apply 
+
 ```yaml
   kubectl apply -f k8s/
 ```
