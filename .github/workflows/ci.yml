@@ -3,9 +3,20 @@ name: News-Demo-CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    paths:
+      - "**.go"
+      - "go.mod"
+      - "go.sum"
+      - "news/**"
+  pull_request_target:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+    paths:
+      - "**.go"
+      - "go.mod"
+      - "go.sum"
+      - "news/**"
 jobs:
 
   build-and-test:
